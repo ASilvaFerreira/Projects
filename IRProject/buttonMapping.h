@@ -1,0 +1,22 @@
+
+#define button0 16738455
+#define button1 16724175
+#define button2 16718055
+#define button3 16743045
+#define button4 16716015
+#define button5 16726215
+#define button6 16734885
+#define button7 16728765
+#define button8 16730805
+#define button9 16732845
+#define buttonCHminus 16753245
+#define buttonCHplus 16769565
+#define buttonCH 16736925
+#define buttonPrev 16720605
+#define buttonNext 16712445
+#define buttonPP 16761405
+#define buttonVolminus 16769055
+#define buttonVolplus 16754775
+#define buttonEQ 16748655
+#define button100plus 16750695
+#define button200plus 16756815

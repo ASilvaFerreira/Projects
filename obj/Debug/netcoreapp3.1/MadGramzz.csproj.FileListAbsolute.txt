@@ -1,0 +1,13 @@
+C:\Users\Asus\Desktop\MadGramzz\bin\Debug\netcoreapp3.1\MadGramzz.exe
+C:\Users\Asus\Desktop\MadGramzz\bin\Debug\netcoreapp3.1\MadGramzz.deps.json
+C:\Users\Asus\Desktop\MadGramzz\bin\Debug\netcoreapp3.1\MadGramzz.runtimeconfig.json
+C:\Users\Asus\Desktop\MadGramzz\bin\Debug\netcoreapp3.1\MadGramzz.runtimeconfig.dev.json
+C:\Users\Asus\Desktop\MadGramzz\bin\Debug\netcoreapp3.1\MadGramzz.dll
+C:\Users\Asus\Desktop\MadGramzz\bin\Debug\netcoreapp3.1\MadGramzz.pdb
+C:\Users\Asus\Desktop\MadGramzz\obj\Debug\netcoreapp3.1\MadGramzz.csprojAssemblyReference.cache
+C:\Users\Asus\Desktop\MadGramzz\obj\Debug\netcoreapp3.1\MadGramzz.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\MadGramzz\obj\Debug\netcoreapp3.1\MadGramzz.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\MadGramzz\obj\Debug\netcoreapp3.1\MadGramzz.AssemblyInfo.cs
+C:\Users\Asus\Desktop\MadGramzz\obj\Debug\netcoreapp3.1\MadGramzz.dll
+C:\Users\Asus\Desktop\MadGramzz\obj\Debug\netcoreapp3.1\MadGramzz.pdb
+C:\Users\Asus\Desktop\MadGramzz\obj\Debug\netcoreapp3.1\MadGramzz.genruntimeconfig.cache
