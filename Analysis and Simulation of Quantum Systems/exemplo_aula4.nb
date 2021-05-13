@@ -1,0 +1,316 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     11199,        306]
+NotebookOptionsPosition[     10376,        272]
+NotebookOutlinePosition[     10748,        288]
+CellTagsIndexPosition[     10705,        285]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"Clear", "[", "n", "]"}]], "Input",
+ CellChangeTimes->{{3.7842945451175203`*^9, 3.7842945507837343`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["n"], "Input",
+ CellChangeTimes->{3.7842945547235303`*^9}],
+
+Cell[BoxData["n"], "Output",
+ CellChangeTimes->{3.784294555880044*^9, 3.7842955106921387`*^9, 
+  3.7842955417825904`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ListPlot", "[", 
+  RowBox[{
+   RowBox[{"gs", "[", 
+    RowBox[{"0.", ",", "2", ",", 
+     RowBox[{"-", "10."}]}], "]"}], "[", 
+   RowBox[{"[", 
+    RowBox[{"2", ",", "1"}], "]"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.784294692003627*^9, 3.7842947521604233`*^9}, {
+  3.7842947821999793`*^9, 3.7842947965648403`*^9}, {3.7842953022408457`*^9, 
+  3.784295403885158*^9}}],
+
+Cell[BoxData[
+ GraphicsBox[{{}, 
+   {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.019444444444444445`], 
+    AbsoluteThickness[1.6], 
+    PointBox[{{1., -0.9502867723443827}, {2., -1.110223024625156*^-16}, {
+     3., -2.77555756156289*^-17}, {4., 1.110223024625156*^-16}, {5., 
+     2.77555756156289*^-17}, {6., 0.}, {7., 5.55111512312578*^-17}, {
+     8., -0.31137605930336837`}}]}, {}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{None, None},
+  AxesOrigin->{0, 0},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  Method->{},
+  PlotRange->{{0., 8.}, {-0.9502867723443827, 1.110223024625156*^-16}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.05], 
+     Scaled[0.05]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{{3.784294698236742*^9, 3.784294718423846*^9}, 
+   3.7842947531019063`*^9, 3.784294797498407*^9, 3.7842953055974407`*^9, {
+   3.784295342890851*^9, 3.7842954044466543`*^9}, 3.784295510725085*^9, 
+   3.784295541826434*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ListPlot", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"gs", "[", 
+     RowBox[{"0.", ",", "2", ",", 
+      RowBox[{"-", "10."}]}], "]"}], "[", 
+    RowBox[{"[", 
+     RowBox[{"2", ",", "2"}], "]"}], "]"}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", "All"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7842954456546755`*^9, 3.7842954670824747`*^9}}],
+
+Cell[BoxData[
+ GraphicsBox[{{}, 
+   {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.019444444444444445`], 
+    AbsoluteThickness[1.6], 
+    PointBox[{{1., -0.31137605930336837`}, {2., 3.178524608336889*^-17}, {3., 
+     3.9648546021672874`*^-17}, {4., 1.9050830648647293`*^-17}, {
+     5., -7.642698774061266*^-17}, {6., 9.104923071925459*^-18}, {7., 
+     6.00167875865105*^-17}, {8., 0.950286772344383}}]}, {}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{None, None},
+  AxesOrigin->{0, 0},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  Method->{},
+  PlotRange->{{0., 8.}, {-0.31137605930336837`, 0.950286772344383}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.05], 
+     Scaled[0.05]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{{3.7842954465813637`*^9, 3.784295467958627*^9}, 
+   3.784295510774948*^9, 3.7842955418763127`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Row", "[", 
+  RowBox[{"{", 
+   RowBox[{"%", ",", "%%"}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7842954852851567`*^9, 3.784295539328803*^9}}],
+
+Cell[BoxData[
+ TemplateBox[{GraphicsBox[{{}, {
+      Hue[0.67, 0.6, 0.6], 
+      Directive[
+       PointSize[0.019444444444444445`], 
+       RGBColor[0.368417, 0.506779, 0.709798], 
+       AbsoluteThickness[1.6]], 
+      PointBox[{{1., -0.31137605930336837`}, {2., 3.178524608336889*^-17}, {
+       3., 3.9648546021672874`*^-17}, {4., 1.9050830648647293`*^-17}, {
+       5., -7.642698774061266*^-17}, {6., 9.104923071925459*^-18}, {7., 
+       6.00167875865105*^-17}, {8., 0.950286772344383}}]}, {}}, {
+    DisplayFunction -> Identity, PlotRangePadding -> {{
+        Scaled[0.02], 
+        Scaled[0.02]}, {
+        Scaled[0.05], 
+        Scaled[0.05]}}, AxesOrigin -> {0, 0}, 
+     PlotRange -> {{0., 8.}, {-0.31137605930336837`, 0.950286772344383}}, 
+     DisplayFunction -> Identity, AspectRatio -> 
+     NCache[GoldenRatio^(-1), 0.6180339887498948], Axes -> {True, True}, 
+     AxesLabel -> {None, None}, AxesOrigin -> {0, 0}, DisplayFunction :> 
+     Identity, Frame -> {{False, False}, {False, False}}, 
+     FrameLabel -> {{None, None}, {None, None}}, 
+     FrameTicks -> {{Automatic, Automatic}, {Automatic, Automatic}}, 
+     GridLines -> {None, None}, GridLinesStyle -> Directive[
+       GrayLevel[0.5, 0.4]], Method -> {}, 
+     PlotRange -> {{0., 8.}, {-0.31137605930336837`, 0.950286772344383}}, 
+     PlotRangeClipping -> True, PlotRangePadding -> {{
+        Scaled[0.02], 
+        Scaled[0.02]}, {
+        Scaled[0.05], 
+        Scaled[0.05]}}, Ticks -> {Automatic, Automatic}}],GraphicsBox[{{}, {
+      Hue[0.67, 0.6, 0.6], 
+      Directive[
+       PointSize[0.019444444444444445`], 
+       RGBColor[0.368417, 0.506779, 0.709798], 
+       AbsoluteThickness[1.6]], 
+      PointBox[{{1., -0.9502867723443827}, {2., -1.110223024625156*^-16}, {
+       3., -2.77555756156289*^-17}, {4., 1.110223024625156*^-16}, {5., 
+       2.77555756156289*^-17}, {6., 0.}, {7., 5.55111512312578*^-17}, {
+       8., -0.31137605930336837`}}]}, {}}, {
+    DisplayFunction -> Identity, PlotRangePadding -> {{
+        Scaled[0.02], 
+        Scaled[0.02]}, {
+        Scaled[0.05], 
+        Scaled[0.05]}}, AxesOrigin -> {0, 0}, 
+     PlotRange -> {{0., 8.}, {-0.9502867723443827, 1.110223024625156*^-16}}, 
+     DisplayFunction -> Identity, AspectRatio -> 
+     NCache[GoldenRatio^(-1), 0.6180339887498948], Axes -> {True, True}, 
+     AxesLabel -> {None, None}, AxesOrigin -> {0, 0}, DisplayFunction :> 
+     Identity, Frame -> {{False, False}, {False, False}}, 
+     FrameLabel -> {{None, None}, {None, None}}, 
+     FrameTicks -> {{Automatic, Automatic}, {Automatic, Automatic}}, 
+     GridLines -> {None, None}, GridLinesStyle -> Directive[
+       GrayLevel[0.5, 0.4]], Method -> {}, 
+     PlotRange -> {{0., 8.}, {-0.9502867723443827, 1.110223024625156*^-16}}, 
+     PlotRangeClipping -> True, PlotRangePadding -> {{
+        Scaled[0.02], 
+        Scaled[0.02]}, {
+        Scaled[0.05], 
+        Scaled[0.05]}}, Ticks -> {Automatic, Automatic}}]},
+  "RowDefault"]], "Output",
+ CellChangeTimes->{{3.784295493727502*^9, 3.784295510857786*^9}, 
+   3.7842955419012675`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"ListPlot", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"gs", "[", 
+       RowBox[{"1.", ",", "2", ",", "J"}], "]"}], "[", 
+      RowBox[{"[", 
+       RowBox[{"2", ",", "1"}], "]"}], "]"}], ",", 
+     RowBox[{"PlotRange", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "9"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "1"}], ",", "1"}], "}"}]}], "}"}]}], ",", 
+     RowBox[{"Joined", "\[Rule]", "True"}], ",", 
+     RowBox[{"Mesh", "\[Rule]", "All"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"J", ",", "0."}], "}"}], ",", 
+     RowBox[{"-", "100"}], ",", "110.", ",", "0.1"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.78429564759669*^9, 3.7842957120243464`*^9}, {
+  3.784295754550704*^9, 3.7842957736825657`*^9}, {3.7842958464343996`*^9, 
+  3.784295930887813*^9}, {3.784295962700773*^9, 3.7842959801959743`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`J$$ = 110., Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`J$$], 0.}, -100, 110., 0.1}}, Typeset`size$$ = {
+    540., {159., 170.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`J$24231$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`J$$ = 0.}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`J$$, $CellContext`J$24231$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> ListPlot[
+        Part[
+         $CellContext`gs[1., 2, $CellContext`J$$], 2, 1], 
+        PlotRange -> {{0, 9}, {-1, 1}}, Joined -> True, Mesh -> All], 
+      "Specifications" :> {{{$CellContext`J$$, 0.}, -100, 110., 0.1}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{612., {228., 237.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.78429571331689*^9, {3.78429576128467*^9, 3.784295774686846*^9}, 
+   3.7842958481647825`*^9, {3.7842958953436317`*^9, 3.784295931432353*^9}, 
+   3.7842959812571397`*^9}]
+}, Open  ]]
+},
+WindowSize->{1536, 781},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+Magnification:>1.5 Inherited,
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (July 1, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 128, 2, 63, "Input"],
+Cell[CellGroupData[{
+Cell[711, 26, 71, 1, 45, "Input"],
+Cell[785, 29, 121, 2, 44, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[943, 36, 399, 10, 45, "Input"],
+Cell[1345, 48, 1293, 31, 349, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2675, 84, 366, 10, 45, "Input"],
+Cell[3044, 96, 1191, 29, 345, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4272, 130, 172, 4, 45, "Input"],
+Cell[4447, 136, 3064, 62, 272, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7548, 203, 1009, 27, 75, "Input"],
+Cell[8560, 232, 1800, 37, 522, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

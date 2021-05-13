@@ -1,0 +1,378 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     12811,        369]
+NotebookOptionsPosition[     11955,        333]
+NotebookOutlinePosition[     12327,        349]
+CellTagsIndexPosition[     12284,        346]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Definir o Hamiltoniano", "Section",
+ CellChangeTimes->{{3.7830893570801816`*^9, 3.783089364283928*^9}, {
+  3.7830893944493055`*^9, 3.783089406491749*^9}, {3.7831016794838767`*^9, 
+  3.7831016887881365`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"h", "=", 
+  RowBox[{"(", GridBox[{
+     {"e", 
+      RowBox[{"v", "+", " ", 
+       RowBox[{"w", " ", 
+        RowBox[{"Exp", "[", 
+         RowBox[{
+          RowBox[{"-", "I"}], " ", "k"}], "]"}]}]}]},
+     {
+      RowBox[{"v", "+", 
+       RowBox[{"w", " ", 
+        RowBox[{"Exp", "[", 
+         RowBox[{"I", " ", "k"}], "]"}]}]}], "e"}
+    }], ")"}]}]], "Input",
+ CellChangeTimes->{{3.7831016921078835`*^9, 3.783101737048329*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"e", ",", 
+     RowBox[{"v", "+", 
+      RowBox[{
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{
+         RowBox[{"-", "\[ImaginaryI]"}], " ", "k"}]], " ", "w"}]}]}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"v", "+", 
+      RowBox[{
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{"\[ImaginaryI]", " ", "k"}]], " ", "w"}]}], ",", "e"}], 
+    "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.7831017426799393`*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Calcular as bandas de energia deste sistema", "Section",
+ CellChangeTimes->{{3.783101749259993*^9, 3.7831018169884176`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"f", "=", 
+  RowBox[{"Eigenvalues", "[", "h", "]"}]}]], "Input",
+ CellChangeTimes->{{3.7831018202801948`*^9, 3.783101840324226*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{
+      RowBox[{"-", "\[ImaginaryI]"}], " ", "k"}]], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"e", " ", 
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{"\[ImaginaryI]", " ", "k"}]]}], "-", 
+      SqrtBox[
+       RowBox[{
+        RowBox[{
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{"2", " ", "\[ImaginaryI]", " ", "k"}]], " ", 
+         SuperscriptBox["v", "2"]}], "+", 
+        RowBox[{
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{"\[ImaginaryI]", " ", "k"}]], " ", "v", " ", "w"}], "+", 
+        RowBox[{
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{"3", " ", "\[ImaginaryI]", " ", "k"}]], " ", "v", " ", 
+         "w"}], "+", 
+        RowBox[{
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{"2", " ", "\[ImaginaryI]", " ", "k"}]], " ", 
+         SuperscriptBox["w", "2"]}]}]]}], ")"}]}], ",", 
+   RowBox[{
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{
+      RowBox[{"-", "\[ImaginaryI]"}], " ", "k"}]], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"e", " ", 
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{"\[ImaginaryI]", " ", "k"}]]}], "+", 
+      SqrtBox[
+       RowBox[{
+        RowBox[{
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{"2", " ", "\[ImaginaryI]", " ", "k"}]], " ", 
+         SuperscriptBox["v", "2"]}], "+", 
+        RowBox[{
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{"\[ImaginaryI]", " ", "k"}]], " ", "v", " ", "w"}], "+", 
+        RowBox[{
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{"3", " ", "\[ImaginaryI]", " ", "k"}]], " ", "v", " ", 
+         "w"}], "+", 
+        RowBox[{
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{"2", " ", "\[ImaginaryI]", " ", "k"}]], " ", 
+         SuperscriptBox["w", "2"]}]}]]}], ")"}]}]}], "}"}]], "Output",
+ CellChangeTimes->{3.7831018434681845`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{
+          RowBox[{"-", "\[ImaginaryI]"}], " ", "k"}]], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"e", " ", 
+           SuperscriptBox["\[ExponentialE]", 
+            RowBox[{"\[ImaginaryI]", " ", "k"}]]}], "-", 
+          SqrtBox[
+           RowBox[{
+            RowBox[{
+             SuperscriptBox["\[ExponentialE]", 
+              RowBox[{"2", " ", "\[ImaginaryI]", " ", "k"}]], " ", 
+             SuperscriptBox["v", "2"]}], "+", 
+            RowBox[{
+             SuperscriptBox["\[ExponentialE]", 
+              RowBox[{"\[ImaginaryI]", " ", "k"}]], " ", "v", " ", "w"}], "+", 
+            RowBox[{
+             SuperscriptBox["\[ExponentialE]", 
+              RowBox[{"3", " ", "\[ImaginaryI]", " ", "k"}]], " ", "v", " ", 
+             "w"}], "+", 
+            RowBox[{
+             SuperscriptBox["\[ExponentialE]", 
+              RowBox[{"2", " ", "\[ImaginaryI]", " ", "k"}]], " ", 
+             SuperscriptBox["w", "2"]}]}]]}], ")"}]}], ",", 
+       RowBox[{
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{
+          RowBox[{"-", "\[ImaginaryI]"}], " ", "k"}]], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"e", " ", 
+           SuperscriptBox["\[ExponentialE]", 
+            RowBox[{"\[ImaginaryI]", " ", "k"}]]}], "+", 
+          SqrtBox[
+           RowBox[{
+            RowBox[{
+             SuperscriptBox["\[ExponentialE]", 
+              RowBox[{"2", " ", "\[ImaginaryI]", " ", "k"}]], " ", 
+             SuperscriptBox["v", "2"]}], "+", 
+            RowBox[{
+             SuperscriptBox["\[ExponentialE]", 
+              RowBox[{"\[ImaginaryI]", " ", "k"}]], " ", "v", " ", "w"}], "+", 
+            RowBox[{
+             SuperscriptBox["\[ExponentialE]", 
+              RowBox[{"3", " ", "\[ImaginaryI]", " ", "k"}]], " ", "v", " ", 
+             "w"}], "+", 
+            RowBox[{
+             SuperscriptBox["\[ExponentialE]", 
+              RowBox[{"2", " ", "\[ImaginaryI]", " ", "k"}]], " ", 
+             SuperscriptBox["w", "2"]}]}]]}], ")"}]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"k", ",", "0", ",", 
+       RowBox[{"2", " ", "Pi"}]}], "}"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"e", ",", "0", ",", "3", ",", "0.01"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"v", ",", "0", ",", "3", ",", "0.01"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"w", ",", "0", ",", "3", ",", "0.01"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7831018559561977`*^9, 3.7831019384763355`*^9}, {
+  3.7831019841683903`*^9, 3.7831019928923893`*^9}, {3.783102044336443*^9, 
+  3.783102047660411*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`e$$ = 1.05, $CellContext`v$$ = 
+    1.6300000000000001`, $CellContext`w$$ = 0.7000000000000001, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`e$$], 0, 3, 0.01}, {
+      Hold[$CellContext`v$$], 0, 3, 0.01}, {
+      Hold[$CellContext`w$$], 0, 3, 0.01}}, Typeset`size$$ = {
+    396., {118., 123.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`e$3482$$ = 
+    0, $CellContext`v$3483$$ = 0, $CellContext`w$3484$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`e$$ = 0, $CellContext`v$$ = 
+        0, $CellContext`w$$ = 0}, "ControllerVariables" :> {
+        Hold[$CellContext`e$$, $CellContext`e$3482$$, 0], 
+        Hold[$CellContext`v$$, $CellContext`v$3483$$, 0], 
+        Hold[$CellContext`w$$, $CellContext`w$3484$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Plot[{E^((-I) $CellContext`k) ($CellContext`e$$ E^(I $CellContext`k) - (
+           E^(2 I $CellContext`k) $CellContext`v$$^2 + 
+           E^(I $CellContext`k) $CellContext`v$$ $CellContext`w$$ + 
+           E^(3 I $CellContext`k) $CellContext`v$$ $CellContext`w$$ + 
+           E^(2 I $CellContext`k) $CellContext`w$$^2)^Rational[1, 2]), 
+         E^((-I) $CellContext`k) ($CellContext`e$$ 
+           E^(I $CellContext`k) + (E^(2 I $CellContext`k) $CellContext`v$$^2 + 
+            E^(I $CellContext`k) $CellContext`v$$ $CellContext`w$$ + 
+            E^(3 I $CellContext`k) $CellContext`v$$ $CellContext`w$$ + 
+            E^(2 I $CellContext`k) $CellContext`w$$^2)^
+           Rational[1, 2])}, {$CellContext`k, 0, 2 Pi}], 
+      "Specifications" :> {{$CellContext`e$$, 0, 3, 0.01}, {$CellContext`v$$, 
+         0, 3, 0.01}, {$CellContext`w$$, 0, 3, 0.01}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{451., {200., 207.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.7831019436723337`*^9, 3.7831020032283993`*^9, 
+  3.783102060952469*^9}]
+}, Open  ]],
+
+Cell[BoxData["\n"], "Input",
+ CellChangeTimes->{3.7831019415682917`*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["f"], "Input",
+ CellChangeTimes->{{3.783101961716351*^9, 3.7831019626963434`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{
+      RowBox[{"-", "\[ImaginaryI]"}], " ", "k"}]], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"e", " ", 
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{"\[ImaginaryI]", " ", "k"}]]}], "-", 
+      SqrtBox[
+       RowBox[{
+        RowBox[{
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{"2", " ", "\[ImaginaryI]", " ", "k"}]], " ", 
+         SuperscriptBox["v", "2"]}], "+", 
+        RowBox[{
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{"\[ImaginaryI]", " ", "k"}]], " ", "v", " ", "w"}], "+", 
+        RowBox[{
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{"3", " ", "\[ImaginaryI]", " ", "k"}]], " ", "v", " ", 
+         "w"}], "+", 
+        RowBox[{
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{"2", " ", "\[ImaginaryI]", " ", "k"}]], " ", 
+         SuperscriptBox["w", "2"]}]}]]}], ")"}]}], ",", 
+   RowBox[{
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{
+      RowBox[{"-", "\[ImaginaryI]"}], " ", "k"}]], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"e", " ", 
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{"\[ImaginaryI]", " ", "k"}]]}], "+", 
+      SqrtBox[
+       RowBox[{
+        RowBox[{
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{"2", " ", "\[ImaginaryI]", " ", "k"}]], " ", 
+         SuperscriptBox["v", "2"]}], "+", 
+        RowBox[{
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{"\[ImaginaryI]", " ", "k"}]], " ", "v", " ", "w"}], "+", 
+        RowBox[{
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{"3", " ", "\[ImaginaryI]", " ", "k"}]], " ", "v", " ", 
+         "w"}], "+", 
+        RowBox[{
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{"2", " ", "\[ImaginaryI]", " ", "k"}]], " ", 
+         SuperscriptBox["w", "2"]}]}]]}], ")"}]}]}], "}"}]], "Output",
+ CellChangeTimes->{3.7831019630403166`*^9}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1536, 781},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+Magnification:>1.1 Inherited,
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (July 1, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 213, 3, 78, "Section"],
+Cell[CellGroupData[{
+Cell[818, 29, 459, 15, 50, "Input"],
+Cell[1280, 46, 523, 18, 39, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1852, 70, 130, 1, 78, "Section"],
+Cell[CellGroupData[{
+Cell[2007, 75, 155, 3, 32, "Input"],
+Cell[2165, 80, 1997, 55, 53, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4199, 140, 2784, 70, 97, "Input"],
+Cell[6986, 212, 2734, 51, 458, "Output"]
+}, Open  ]],
+Cell[9735, 266, 72, 1, 53, "Input"],
+Cell[CellGroupData[{
+Cell[9832, 271, 95, 1, 32, "Input"],
+Cell[9930, 274, 1997, 55, 53, "Output"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
